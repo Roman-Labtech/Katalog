@@ -52,11 +52,11 @@
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git"/> 
    <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git"/>
    
-    <plugin name="CordovaCallNumberPlugin" spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git" />
+   <!-- <plugin name="CordovaCallNumberPlugin" spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git" />
     <plugin name="CordovaCallNumberPlugin-master" spec="plugins/CordovaCallNumberPlugin-master" />
     <plugin name="cordova-plugin-console" spec="1.0.7" />
     <plugin name="cordova-plugin-dialogs" />
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen" />
-    <plugin name="cordova-plugin-statusbar" spec="1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="1.0.1" />-->
 </widget>
