@@ -11,8 +11,7 @@
     "license": "Apache-2.0",
     "dependencies": {
         "CordovaCallNumberPlugin": "https://github.com/Rohfosho/CordovaCallNumberPlugin",
-        "CordovaCallNumberPlugin-master": "plugins/CordovaCallNumberPlugin-master",
-        "call-number": "git+https://github.com/Rohfosho/CordovaCallNumberPlugin.git",
+        "call-number": "git+https://github.com/Rohfosho/CordovaCallNumberPlugin",
         "cordova-android": "^6.2.3",
         "cordova-plugin-console": "1.0.7",
         "cordova-plugin-splashscreen": "https://github.com/apache/cordova-plugin-splashscreen",
