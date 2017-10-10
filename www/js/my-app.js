@@ -240,10 +240,10 @@ function countPow(n) {
 }
 
 
-
 function phonecall()
 {
-    window.plugins.CallNumber.callNumber(onSuccess, onError,88313367613, true);
+	alert("fff");
+    window.plugins.CallNumber.callNumber(onSuccess, onError,"88313367613", true);
 }
 
 function onSuccess(result){
