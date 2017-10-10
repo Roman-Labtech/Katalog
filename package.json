@@ -1,6 +1,6 @@
 {
     "name": "com.roman.app",
-    "displayName": "app3",
+    "displayName": "app4",
     "version": "2.2.1",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",
@@ -10,8 +10,9 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "CordovaCallNumberPlugin": "https://github.com/Rohfosho/CordovaCallNumberPlugin",
-        "call-number": "git+https://github.com/Rohfosho/CordovaCallNumberPlugin",
+        "CordovaCallNumberPlugin": "https://github.com/Rohfosho/CordovaCallNumberPlugin.git",
+        "CordovaCallNumberPlugin-master": "https://github.com/Rohfosho/CordovaCallNumberPlugin.git",
+        "call-number": "git+https://github.com/Rohfosho/CordovaCallNumberPlugin.git",
         "cordova-android": "^6.2.3",
         "cordova-plugin-console": "1.0.7",
         "cordova-plugin-splashscreen": "https://github.com/apache/cordova-plugin-splashscreen",
