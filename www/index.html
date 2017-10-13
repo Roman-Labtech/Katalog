@@ -33,9 +33,10 @@
      
   <script type="text/javascript" charset="utf-8" src="js/cordova_plugins.js">
   </script>
-   <script> document.addEventListener("deviceready", appReady, false); 
+   <script> 
+	   document.addEventListener("deviceready", appReady, false); 
              function appReady(){ 
-               document.addEventListener('backbutton', function (e) {
+            document.addEventListener('backbutton', function (e) {
 e.preventDefault();
 / Check for open panels /
 if ($$('.panel.active').length > 0) {
@@ -62,9 +63,10 @@ if (n == 1) navigator.app.exitApp();
 
              } </script>
  <script>
-          function exitFromApp()
+ 
+	 function exitFromApp()
        {
-           navigator.app.exitApp();
+        navigator.app.exitApp();
        }; 
       </script>         
   </head>
@@ -183,7 +185,7 @@ if (n == 1) navigator.app.exitApp();
     </li>
    	 <li class="accordion-item">
 			<div class="item-inner">
-			  <a href="question.html" data-ignore-cache="true" class="graylink close-panel">
+			    <a href="question.html" onclick="openBrowser()" data-ignore-cache="true" class="graylink close-panel">
 				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">help</i>
 		  Наш сайт</div>   
@@ -286,21 +288,17 @@ if (n == 1) navigator.app.exitApp();
             </div>
           </div>
         </div>
-        <!-- Bottom Toolbar-->
-   
+        <!-- Bottom Toolbar--> 
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>        
     <script type="text/javascript" src="js/CallNumber.js"></script>
-    
    <script>
     var myApp = new Framework7({
     swipePanel: 'left'
          });
     </script>
-
-
   </body>
 </html>
