@@ -61,6 +61,7 @@
     <plugin name="cordova-plugin-inappbrowser" />
     <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git"/> 
     <plugin name="cordova-plugin-statusbar" spec="https://github.com/apache/cordova-plugin-statusbar.git"/>
+    <plugin name="cordova-plugin-phonedialer" spec="https://github.com/peutetre/PhoneGap-PhoneDialer.git"/>
 
 <!--<plugin name="CordovaCallNumberPlugin" spec="https://github.com/Rohfosho/CordovaCallNumberPlugin.git" />
    
