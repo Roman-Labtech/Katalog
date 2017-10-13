@@ -241,20 +241,16 @@ function countPow(n) {
 
 
 function phonecall(){
-  window.plugins.CallNumber.callNumber(onSuccess, onError,88313367613, true);
+ window.plugins.CallNumber.callNumber(onSuccess, onError,"1234567890");
 };
 
 function onSuccess(result){
-  console.log("Success:"+result);
+ console.log("Success:"+result);
 };
 
 function onError(result) {
-  console.log("Error:"+result);
+ console.log("Error:"+result);
 };
-
-
-
-
 
 
 
