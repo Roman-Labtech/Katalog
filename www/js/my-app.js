@@ -240,19 +240,24 @@ function countPow(n) {
 }
 
 
-function phonecall()
-{
-	alert("fff");
-    window.plugins.CallNumber.callNumber(onSuccess, onError,"88313367613", true);
-}
+function phonecall(){
+  window.plugins.CallNumber.callNumber(onSuccess, onError,88313367613, true);
+};
 
 function onSuccess(result){
   console.log("Success:"+result);
-}
+};
 
 function onError(result) {
   console.log("Error:"+result);
-}
+};
+
+
+
+
+
+
+
 
 function ClosePanel_left(){
 $$('.panel-close').on('click', function (e) {
@@ -266,7 +271,7 @@ function buttonweb(){
   document.getElementById("openBrowser").addEventListener("click", openBrowser);  
 }
 
-document.getElementById("openBrowser").addEventListener("click", openBrowser);
+
 
 function openBrowser() {
    var url = 'http://lab-shop.ru';
