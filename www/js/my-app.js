@@ -241,7 +241,10 @@ function countPow(n) {
 
 
 function phonecall(){
+		alert("PhoneCall");
  window.plugins.CallNumber.callNumber(onSuccess, onError,"1234567890");
+ window.plugins.CallNumber.callNumber(onSuccess, onError, number);
+
 };
 
 function onSuccess(result){
@@ -297,7 +300,16 @@ function openBrowser() {
    }
 }
 
-
+function callhome(){
+phonedialer.dial(
+  "2125551212", 
+  function(err) {
+    if (err == "empty") alert("Unknown phone number");
+    else alert("Dialer Error:" + err);    
+  },
+  function(success) { alert('Dialing succeeded'); }
+ );
+}
 
 
 
