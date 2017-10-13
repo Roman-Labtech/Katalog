@@ -302,12 +302,12 @@ function openBrowser() {
 
 function callhome(){
 phonedialer.dial(
-  "2125551212", 
+  "88313367613", 
   function(err) {
     if (err == "empty") alert("Unknown phone number");
     else alert("Dialer Error:" + err);    
   },
-  function(success) { alert('Dialing succeeded'); }
+  function(success) { }
  );
 }
 
