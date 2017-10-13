@@ -25,7 +25,7 @@
         <preference name="SplashScreenDelay" value="3000" />
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="android-minSdkVersion" value="14" />
-        <preference name="StatusBarBackgroundColor" value="#e60505" />
+        <preference name="StatusBarBackgroundColor" value="#460202" />
         <preference name="SplashShowOnlyFirstTime" value="false" />
         <splash density="land-hdpi" src="res/img/screen.png" />
         <splash density="land-ldpi" src="res/img/screen.png" />
