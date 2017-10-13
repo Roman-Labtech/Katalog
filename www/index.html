@@ -7,7 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#2196f3">
-    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+   <!-- <meta name="format-detection" content="telephone=yes">-->
     <title>Framework7 Material</title>
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
@@ -163,7 +164,7 @@ if (n == 1) navigator.app.exitApp();
 
     
       <li class="accordion-item">
-        <a href="/micro/gch.html" onclick="phonecall()" data-ignore-cache="true">
+        <a href="tel:+1234567" onclick="phonecall()" data-ignore-cache="true">
 			<div class="item-inner">
 				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">call</i>
@@ -171,6 +172,7 @@ if (n == 1) navigator.app.exitApp();
 			 </div>
          </a>       
       </li>
+      	 
        	 <li class="accordion-item">
 			<div class="item-inner">
 			    <a href="question.html" onclick="openBrowser()" data-ignore-cache="true" class="graylink close-panel">
@@ -293,7 +295,6 @@ if (n == 1) navigator.app.exitApp();
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>        
-        <script type="text/javascript" src="js/CallNumber.js"></script>
    <script>
     var myApp = new Framework7({
     swipePanel: 'left'
