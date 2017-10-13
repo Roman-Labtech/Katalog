@@ -7,8 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#2196f3">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-   <!-- <meta name="format-detection" content="telephone=yes">-->
+    <meta name="format-detection" content="telephone=no">
     <title>Framework7 Material</title>
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
@@ -31,7 +30,9 @@
     // device APIs are available
     //    
     </script> 
-
+     
+  <script type="text/javascript" charset="utf-8" src="js/cordova_plugins.js">
+  </script>
    <script> 
 	   document.addEventListener("deviceready", appReady, false); 
              function appReady(){ 
@@ -293,12 +294,10 @@ if (n == 1) navigator.app.exitApp();
         <!-- Bottom Toolbar--> 
       </div>
     </div>
-    <!-- Path to Framework7 Library JS-->
-  <!--  <script type="text/javascript" src="js/framework7.min.js"></script>-->
-    <script type="text/javascript" src="js/my-app.js"></script>    
-    <script type="text/javascript" src="js/framework7.min.js"></script>  
-        <script type="text/javascript" src="js/framework7.min.js.map"></script>  
- 
+       <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>        
+
    <script>
     var myApp = new Framework7({
     swipePanel: 'left'
