@@ -7,7 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="theme-color" content="#2196f3">
-    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+   <!-- <meta name="format-detection" content="telephone=yes">-->
     <title>Framework7 Material</title>
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
@@ -30,9 +31,7 @@
     // device APIs are available
     //    
     </script> 
-     
-  <script type="text/javascript" charset="utf-8" src="js/cordova_plugins.js">
-  </script>
+
    <script> 
 	   document.addEventListener("deviceready", appReady, false); 
              function appReady(){ 
@@ -85,15 +84,14 @@ if (n == 1) navigator.app.exitApp();
 <div class="list-block accordion-list">
   <ul>
     <li class="accordion-item">
-        <div class="item-inner panel_white">
-             <a href="searchbar.html" class="item-content item-link panel_white close-panel">
-                 <i class="material-icons panel_white">search</i>Поиск 
-                 
-             </a>
-         </div>     
+		<div class="item-inner panel_white">
+			 <a href="searchbar.html" class="item-content item-link panel_white close-panel">
+			   <i class="material-icons panel_white">search</i>Поиск 
+			 </a>
+		 </div>     
     </li>
     
-     <li class="accordion-item">
+    <li class="accordion-item">
        <a href="problist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
@@ -114,19 +112,20 @@ if (n == 1) navigator.app.exitApp();
     </li>
  
     <li class="accordion-item">
-        <a href="microlist.html" data-ignore-cache="true" class="close-panel">
+      <a href="microlist.html" data-ignore-cache="true" class="close-panel">
         <div class="item-inner">
-				<div class="item-title mainlinks panel_white">
-				 	  <i class="material-icons icon-settings">done</i> Микрошприцы
+			<div class="item-title mainlinks panel_white">
+		 	  <i class="material-icons icon-settings">done</i> Микрошприцы
 				</div>          
 			 </div>
          </a>       
    	</li>
-         <li class="accordion-item">
+   	
+    <li class="accordion-item">
        <a href="ventilist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
-				  <i class="material-icons icon-settings">done</i>Вентиля
+			<i class="material-icons icon-settings">done</i>Вентиля
           </div>
         </div>
         </a>
@@ -165,7 +164,7 @@ if (n == 1) navigator.app.exitApp();
 
     
       <li class="accordion-item">
-        <a href="tel:+1234567" onclick="callhome()" data-ignore-cache="true">
+        <a href="tel:+1234567" onclick="phonecall()" data-ignore-cache="true">
 			<div class="item-inner">
 				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">call</i>
@@ -173,7 +172,16 @@ if (n == 1) navigator.app.exitApp();
 			 </div>
          </a>       
       </li>
-    
+      	 
+       	 <li class="accordion-item">
+			<div class="item-inner">
+			    <a href="question.html" onclick="openBrowser()" data-ignore-cache="true" class="graylink close-panel">
+				<div class="item-title mainlinks panel_white">		 
+		  <i class="material-icons icon-settings">web</i>
+		  Наш сайт</div>   
+		       </a>      
+		    </div>
+    </li>
    	   	 <li class="accordion-item">
 			<div class="item-inner">
 			  <a href="question.html" data-ignore-cache="true" class="graylink close-panel">
@@ -183,15 +191,7 @@ if (n == 1) navigator.app.exitApp();
 		       </a>      
 		    </div>
     </li>
-   	 <li class="accordion-item">
-			<div class="item-inner">
-			  <a href="question.html" data-ignore-cache="true" class="graylink close-panel">
-				<div class="item-title mainlinks panel_white">		 
-		  <i class="material-icons icon-settings">help</i>
-		  Наш сайт</div>   
-		       </a>      
-		    </div>
-    </li>
+
    	<li class="accordion-item">
         
 			<div class="item-inner">
@@ -247,24 +247,29 @@ if (n == 1) navigator.app.exitApp();
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
             <div class="page-content swipeout-content">
-              <div class="content-block-title">
-              <h3>
-                  ООО "Лабораторные Технологии"
-              </h3></div>
-              <div class="content-block">
-                <div class="content-block-inner">
+			   <div class="content-block">                      
+				  <div>
+					<p style="color: #0062ff; font-size: 2em">
+						Каталог продукции компании<br> "Лабораторные Технологии"
+					</p>
+				  </div>
                        <p>
                   	Наша организация ООО "Лабораторные Технологии" предлагает своим клиентам такое оборудование, как микрошприцы, различные пробоотборники и оборудование к ним, емкости из нержавеющей стали. 
-                    </p>
-                    
-       
+                    </p>    
 <ul>
-   <li>
+
+    <li>
      Микрошприцы АГАТ МШ-10, МШ-1, МШ-50, Газохром (различного объема) 
 </li>
+ 
   <li>
-      Различные пробоотборники ПГО и оборудование к ним 
+      Различные пробоотборники ПГО и оборудование к ним <br>
+      <a href="tel:+6494461709">
+      <a href="#" onclick="callhome()">CALL</a>
+      61709
+      </a>
   </li>
+  
   <li>
       Емкости из нержавеющей стали по чертежам заказчика.
   </li>
@@ -279,11 +284,8 @@ if (n == 1) navigator.app.exitApp();
   </li>
    </ul>
     <br> 
-<div class="list-block">
-             </div>      
-               <br><br>
-                  <br>
-                </div>
+Мы можем доставить товар любым из удобных для Вас способов: транспортной компанией, почтой, экспресс-почтой, или самовывозом из нашего склада расположенного  в г. Дзержинске Нижегородской области.   
+               	<br><br><br>         
               </div>         
             </div>
           </div>
@@ -292,9 +294,11 @@ if (n == 1) navigator.app.exitApp();
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>        
-
+  <!--  <script type="text/javascript" src="js/framework7.min.js"></script>-->
+    <script type="text/javascript" src="js/my-app.js"></script>    
+    <script type="text/javascript" src="js/framework7.min.js"></script>  
+        <script type="text/javascript" src="js/framework7.min.js.map"></script>  
+ 
    <script>
     var myApp = new Framework7({
     swipePanel: 'left'
