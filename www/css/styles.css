@@ -67,3 +67,11 @@ color:white;!important
     text-indent: 20px;
     text-align: justify;
 }
+.search_title{
+font-weight: 700;	
+}
+.search_price{
+font-weight: 900;
+font-size: 15px;
+color:#2196f3!important; 	
+}
