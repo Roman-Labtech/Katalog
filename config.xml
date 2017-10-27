@@ -25,7 +25,7 @@
         <preference name="SplashScreenDelay" value="3000" />
         <preference name="SplashMaintainAspectRatio" value="true" />
         <preference name="android-minSdkVersion" value="14" />
-        <preference name="StatusBarBackgroundColor" value="#7c0505" />
+        <preference name="StatusBarBackgroundColor" value="#9b0c0c" />
         <preference name="SplashShowOnlyFirstTime" value="false" />
         <splash density="land-hdpi" src="res/img/screen.png" />
         <splash density="land-ldpi" src="res/img/screen.png" />
@@ -41,6 +41,18 @@
         <icon density="xhdpi" src="res/icon/android/drawable-xhdpi-icon.png" />
         <icon density="xxhdpi" src="res/icon/android/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="res/icon/android/drawable-xxxhdpi-icon.png" />
+        
+  
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="res/img/screen.png" density="land-hdpi"/>
+    <splash src="res/img/screen.png" density="land-ldpi"/>
+    <splash src="res/img/screen.png" density="land-mdpi"/>
+    <splash src="res/img/screen.png" density="land-xhdpi"/>
+    <splash src="res/img/screen.png" density="port-hdpi"/>
+    <splash src="res/img/screen.png" density="port-ldpi"/>
+    <splash src="res/img/screen.png" density="port-mdpi"/>
+    <splash src="res/img/screen.png" density="port-xhdpi"/>
+    
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
