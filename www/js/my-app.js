@@ -309,7 +309,7 @@ phonedialer.dial(
   },
   function(success) { }
  );
-}
+};
 
 
 
