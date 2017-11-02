@@ -21,7 +21,8 @@
     margin-top: -1px!important;
 	padding-right: 5px!important;}
 body{
-font-family: 'Roboto+Condensed', sans-serif!important;    
+/*font-family: 'Roboto+Condensed', sans-serif!important;  */
+font-family: 'Roboto Thin', arial;
 }
 
 .sekund-style{
@@ -36,7 +37,7 @@ font-family: 'Roboto+Condensed', sans-serif!important;
 }
 
 .mainlinks{
-	padding-left: 15px;
+	padding-left: 10px;
 	color: black;
 }
 
@@ -74,4 +75,7 @@ font-weight: 700;
 font-weight: 900;
 font-size: 15px;
 color:#2196f3!important; 	
+}
+.menu-back:active{
+	background-color: red;
 }

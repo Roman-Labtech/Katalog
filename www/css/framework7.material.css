@@ -2347,7 +2347,7 @@ html.pixel-ratio-3 .content-block-inner:after {
 /* === Lists === */
 .list-block {
   margin: 32px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .list-block ul {
   list-style: none;
@@ -2499,6 +2499,7 @@ html.pixel-ratio-3 .list-block ul:after {
 .list-block li {
   box-sizing: border-box;
   position: relative;
+	
 }
 .list-block .item-media {
   display: -webkit-box;
@@ -5061,7 +5062,7 @@ html.with-statusbar-overlay.ios .popup.tablet-fullscreen {
 .panel {
   z-index: 1000;
   display: none;
-  background: #828282;
+  background: #272727;
   box-sizing: border-box;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
