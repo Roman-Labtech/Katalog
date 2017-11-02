@@ -11,8 +11,13 @@
     <title>Framework7 Material</title>
     <link rel="stylesheet" href="css/framework7.material.css">
     <link rel="stylesheet" href="css/framework7.material.colors.css">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <!--<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">-->
     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet"> 
+    <link rel="stylesheet" href="fonts/roboto-thin.ttf">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100"  rel="stylesheet" type="text/css">
+    
     <link rel="stylesheet" href="css/material-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/icon.png">
@@ -84,15 +89,25 @@ if (n == 1) navigator.app.exitApp();
  
 <div class="list-block accordion-list">
   <ul>
-    <li class="accordion-item">
+   <!-- <li class="accordion-item">
 		<div class="item-inner panel_white">
 			 <a href="searchbar.html" class="item-content item-link panel_white close-panel">
 			   <i class="material-icons panel_white">search</i>Поиск 
 			 </a>
 		 </div>     
+    </li>-->
+    
+     <li class="accordion-item menu-back">
+       <a href="searchbar.html" data-ignore-cache="true" class="close-panel" > 
+        <div class="item-inner">
+          <div class="item-title mainlinks panel_white">
+			   <i class="material-icons panel_white icon-settings">search</i>Поиск 
+          </div>
+        </div>
+        </a>
     </li>
     
-    <li class="accordion-item">
+    <li class="accordion-item menu-back">
        <a href="problist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
@@ -102,7 +117,7 @@ if (n == 1) navigator.app.exitApp();
         </a>
     </li>
     
-    <li class="accordion-item">
+    <li class="accordion-item menu-back">
        <a href="viscolist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
@@ -112,7 +127,7 @@ if (n == 1) navigator.app.exitApp();
         </a>
     </li>
  
-    <li class="accordion-item">
+    <li class="accordion-item menu-back">
       <a href="microlist.html" data-ignore-cache="true" class="close-panel">
         <div class="item-inner">
 			<div class="item-title mainlinks panel_white">
@@ -122,7 +137,7 @@ if (n == 1) navigator.app.exitApp();
          </a>       
    	</li>
    	
-    <li class="accordion-item">
+    <li class="accordion-item menu-back">
        <a href="ventilist.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
@@ -132,7 +147,7 @@ if (n == 1) navigator.app.exitApp();
         </a>
     </li>
       
-    <li class="accordion-item">
+    <li class="accordion-item menu-back">
        <a href="dopoln.html" data-ignore-cache="true" class="close-panel" > 
         <div class="item-inner">
           <div class="item-title mainlinks panel_white">
@@ -164,7 +179,7 @@ if (n == 1) navigator.app.exitApp();
    
 
     
-      <li class="accordion-item">
+      <li class="accordion-item menu-back">
         <a href="tel:+1234567" onclick="callhome()" data-ignore-cache="true">
 			<div class="item-inner">
 				<div class="item-title mainlinks panel_white">		 
@@ -174,16 +189,16 @@ if (n == 1) navigator.app.exitApp();
          </a>       
       </li>
       	 
-       	 <li class="accordion-item">
+       	 <li class="accordion-item menu-back">
 			<div class="item-inner">
-			    <a href="question.html" onclick="openBrowser()" data-ignore-cache="true" class="graylink close-panel">
+			    <a href="#" onclick="openBrowser()" data-ignore-cache="true" class="graylink close-panel">
 				<div class="item-title mainlinks panel_white">		 
 		  <i class="material-icons icon-settings">web</i>
 		  Наш сайт</div>   
 		       </a>      
 		    </div>
     </li>
-   	   	 <li class="accordion-item">
+   	   	 <li class="accordion-item menu-back">
 			<div class="item-inner">
 			  <a href="question.html" data-ignore-cache="true" class="graylink close-panel">
 				<div class="item-title mainlinks panel_white">		 
@@ -193,15 +208,13 @@ if (n == 1) navigator.app.exitApp();
 		    </div>
     </li>
 
-   	<li class="accordion-item">
-        
-			<div class="item-inner">
-			  <a href="#" data-ignore-cache="true" class="graylink" onClick="exitFromApp()">
-
-				<div class="item-title mainlinks panel_white">		 
-		      <i class="material-icons icon-settings">cancel</i> Выход      
-                </div>
-         </a> 
+   	<li class="accordion-item menu-back">
+        <div class="item-inner">
+				<a href="#" data-ignore-cache="true" class="graylink" onClick="exitFromApp()">
+					<div class="item-title mainlinks panel_white">		 
+		     			<i class="material-icons icon-settings">cancel</i> Выход      
+                	</div>
+         		</a> 
         </div> 
    	</li>
 
@@ -250,7 +263,7 @@ if (n == 1) navigator.app.exitApp();
             <div class="page-content swipeout-content">
 			   <div class="content-block">                      
 				  <div>
-					<p style="color: #0062ff; font-size: 2em">
+					<p style="color: #0062ff; font-size: 1.5; text-align: center">
 						Каталог продукции компании<br> "Лабораторные Технологии"
 					</p>
 				  </div>
